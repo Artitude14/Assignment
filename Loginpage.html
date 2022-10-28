@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login Page</h1>
+        <form action="">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="" required>
+
+            <label for="password">Password</label>
+            <input type="password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number, one lowercase and one uppercase letter and must be atleast 8 or more characters long," 
+            name="Password" id="" required>
+      
+            <input class="loginsubmit" type="submit" value="Login">
+        </form>
+
+        <p class="SignUp">Do not have an account? <a href="index.html">Sign Up here</a>
+        </p>
+    </div>
+</body>
+</html>

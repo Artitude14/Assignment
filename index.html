@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="signup-box">
+    <h1>Registration Page</h1>
+    <h4>Sign up for free in just a minute</h4>
+    <form action="Successful.html">
+      <label for="First Name">First Name</label>
+      <input type="text" name="First Name" id="" required>
+
+      <label for="Last Name">Last Name</label>
+      <input type="text" name="Last Name" id="" required>
+
+      <label for="Phone number">Phone Number</label>
+      <input type="tel" name="Phone Number" id="" required>
+
+      <label for="Email">Email</label>
+      <input type="email" name="Email" id="" required>
+
+      <label for="Gender">Gender</label>
+      <select name="Gender" id="Gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label for="D.O.B">Date of birth</label>
+      <input type="date" min="1960-12-30" max="2022-10-14" name="D.O.B" id="D.O.B" required>
+
+      <label for="Favorite color">Favorite color</label>
+      <input type="color" name="Favorite color" id="" required>
+
+      <label for="password">Password</label>
+      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number, one lowercase and one uppercase letter and must be atleast 8 or more characters long,"
+        name="password" id="" required>
+
+      <label for="confirm password">Confirm password</label>
+      <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number, one lowercase and one uppercase letter and must be atleast 8 or more characters long,"
+        name="confirm password" id="" required>
+
+      <input type="submit" class="submit" value="Sign Up">
+    </form>
+
+    <p class="TandC">By clicking the Sign Up button, you agree to our <br>
+      <a href="#">Terms and Condition</a> and <a href="#">Privacy Policy</a>
+    </p>
+
+    <p class="login">Already have an account? <a href="Loginpage.html">Login here</a></p>
+  </div>
+
+</body>
+
+</html>
